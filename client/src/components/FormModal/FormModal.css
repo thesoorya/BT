@@ -1,5 +1,5 @@
 .formModal{
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 10px;
     display: flex;
@@ -8,13 +8,14 @@
     background-color: #eee;
     border: 1px solid #ccc;
 }
-.formModal input, select{
-    padding: 5px 10px;
+.form-input-select{
+    padding: 10px 5%;
     border: 1px solid  #ccc;
     border-radius: 25px;
+    appearance: none;
 }
-.formModal input:focus, select:focus{
-    border: 2px solid  #ccc;
+.form-input-select:focus{
+    outline: 2px solid  #ccc;
 }
 .form-modal-btns{
     display: flex;
@@ -24,7 +25,7 @@
 .form-modal-btns button{
     border: 1px solid #ccc;
     text-transform: uppercase;
-    padding: 3px 10px;
+    padding: 10px 5%;
     cursor: pointer;
 }
 .form-modal-btns button:nth-child(1){

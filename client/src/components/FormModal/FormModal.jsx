@@ -42,6 +42,7 @@ const FormModal = ({ recordId, isModalOpen, setIsModalOpen }) => {
     return (
         <div className='formModal'>
             <input
+                className='form-input-select'
                 type="number"
                 id="amount"
                 name="amount"
@@ -51,6 +52,7 @@ const FormModal = ({ recordId, isModalOpen, setIsModalOpen }) => {
                 required
             />
             <input
+                className='form-input-select'
                 type="text"
                 id="description"
                 name="description"
@@ -60,6 +62,7 @@ const FormModal = ({ recordId, isModalOpen, setIsModalOpen }) => {
                 required
             />
             <select
+                className='form-input-select'
                 value={purpose}
                 onChange={(e) => setPurpose(e.target.value)}
                 required
@@ -74,6 +77,7 @@ const FormModal = ({ recordId, isModalOpen, setIsModalOpen }) => {
                 <option value="shopping">Shopping</option>
             </select>
             <select
+                className='form-input-select'
                 value={paymentMethod}
                 onChange={(e) => setPaymentMethod(e.target.value)}
                 required

@@ -18,7 +18,8 @@
   border-bottom: 1px solid #ccc;
   text-transform: capitalize;
 }
-.transaction-edit, .transaction-delete {
+.transaction-edit,
+.transaction-delete {
   margin-right: 2px;
   font-size: 12px;
   padding: 1px 4px;
@@ -31,7 +32,8 @@
 .transaction-delete {
   background-color: orange;
 }
-.modal-edit{
+.modal-edit {
+  width: 350px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,5 +55,17 @@
   }
   .transaction-item {
     border-right: 0;
+  }
+  .modal-edit {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .transaction-title{
+    font-size: 20px;
+  }
+  .modal-edit {
+    width: 95%;
   }
 }
