@@ -9,7 +9,7 @@ const Store = ({ children }) => {
   const { user } = useUser();
   const [records, setRecords] = useState([]);
 
-  const baseURL = "http://localhost:5000/api/finance"
+  const baseURL = "https://bt-1-ca25.onrender.com/api/finance"
 
   useEffect(() => {
     if (user && user.id) {
