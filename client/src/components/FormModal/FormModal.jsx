@@ -8,7 +8,7 @@ import './FormModal.css'
 const FormModal = ({ recordId, isModalOpen, setIsModalOpen }) => {
 
     const { user } = useUser()
-    const { getRecord } = useContext(StoreContext)
+    const { getRecord, baseURL  } = useContext(StoreContext)
     const [amount, setAmount] = useState("");
     const [description, setDescription] = useState("");
     const [purpose, setPurpose] = useState("");
@@ -22,7 +22,7 @@ const FormModal = ({ recordId, isModalOpen, setIsModalOpen }) => {
         }
 
         try {
-            const response = await axios.put(`http://localhost:5000/api/finance/${recordId}`, {
+            const response = await axios.put(`${baseURL}/${recordId}`, {
                 userId: user.id,
                 description: description,
                 amount,
