@@ -22,7 +22,7 @@ const FormModal = ({ recordId, isModalOpen, setIsModalOpen }) => {
         }
 
         try {
-            const response = await axios.put(`${baseURL}/${recordId}`, {
+            const response = await axios.put(`https://bt-1-ca25.onrender.com/api/finance/${recordId}`, {
                 userId: user.id,
                 description: description,
                 amount,
